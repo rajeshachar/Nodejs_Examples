@@ -2,10 +2,15 @@
 ## Involves CRUD operation using express and having JWT authentication
 ### EndPoint Details
 Home Page: http://localhost:5000/www.tcs.com/
+
 Register Page:http://localhost:5000/www.tcs.com/api/register
+
 Login Page:http://localhost:5000/www.tcs.com/api/login
+
 Update Page:http://localhost:5000/www.tcs.com/api/update/  pass employee id in the end of the endpiont which you have to update
+
 Delete Page:http://localhost:5000/www.tcs.com/api/delete/ pass employee id in the end of the endpiont which you have to delete
+
 List Page:http://localhost:5000/www.tcs.com/api/allemps/ 
 
 ### Run command
