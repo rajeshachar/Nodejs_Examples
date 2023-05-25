@@ -1,0 +1,37 @@
+
+    {
+        "emp_id": 1900435,
+        "fname": "Jhon",
+        "password": "jh@123",
+        "email": "jh@tcs.com",
+        "contact": 7259500935,
+        "address": {
+            "city": "Indiana",
+            "country": "US",
+            "zipcode": 576022
+        }
+    }
+    {
+        "emp_id": 190408,
+        "fname": "Shetty",
+        "password": "shetty@123",
+        "email": "shetty@tcs.com",
+        "contact": 8259516935,
+        "address": {
+            "city": "Mysore",
+            "country": "IND",
+            "zipcode": 576022
+        }
+    }
+    {
+        "emp_id": 202302,
+        "fname": "Jenny",
+        "password": "jo@123",
+        "email": "jenny@tcs.com",
+        "contact": 9879516935,
+        "address": {
+            "city": "tumkur",
+            "country": "IND",
+            "zipcode": 576022
+        }
+    }

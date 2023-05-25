@@ -1,0 +1,31 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "description": "This Project is related to NODE JS",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "npm i && nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajeshachar/Nodejs_Examples.git"
+  },
+  "author": "Rajesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rajeshachar/Nodejs_Examples/issues"
+  },
+  "homepage": "https://github.com/rajeshachar/Nodejs_Examples#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "joi": "^17.9.2",
+    "jsonwebtoken": "^9.0.0",
+    "lodash.isempty": "^4.4.0",
+    "nodemon": "^2.0.22"
+  }
+}
