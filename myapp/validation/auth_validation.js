@@ -21,4 +21,8 @@ const updateSchema=Joi.object({
     email:Joi.string().email().lowercase().required(),
     password: Joi.string().min(2).required()
 })
-export {authSchema,logSchema,updateSchema}
+const adminSchema=Joi.object({
+    username:Joi.string().required(),
+    password: Joi.string().min(2).required()
+})
+export {authSchema,logSchema,updateSchema,adminSchema}

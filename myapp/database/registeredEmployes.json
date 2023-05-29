@@ -1,0 +1,14 @@
+[
+    {
+        "emp_id": 1948435,
+        "fname": "Jhon",
+        "password": "$2b$10$77lJEA4mm9DV.cQPbn47BeyiuQqZ5MQ1INgizERpn0LwVxjdY7bCe",
+        "email": "jh@tcs.com",
+        "contact": 7259500935,
+        "address": {
+            "city": "Indiana",
+            "country": "US",
+            "zipcode": 576022
+        }
+    }
+]

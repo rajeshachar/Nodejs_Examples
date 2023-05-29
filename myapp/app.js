@@ -6,11 +6,15 @@ const port = process.env.PORT || 5000
 app.use(express.json())
 app.use(bodyparser.urlencoded({ extended: true }))
 app.use('/www.tcs.com',routes)
+
 //define error handling
-app.use((error, req, res, next) => {
-    res.status(error.status || 500)
+app.use((error, req, res, next) => { 
+    if (error.name === 'JsonWebTokenError') {
+            error.status = 401;
+    }
+    res.status(error.status || 400)
     res.json({ 
-        status:error.status || 500,
+        status:error.status || 400,
         error: error.message});
   });
 app.listen(port, (err) => {
