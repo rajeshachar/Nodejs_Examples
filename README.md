@@ -62,4 +62,4 @@ Copy encrypted password and paste it as value of password under **/myapp/databas
 
 Directly import **Nodejs_Project.postman_collection.json** file into postman as shown below
 
-![postman](/myapp/postman.PNG)
+![postman](./myapp/postman.PNG)
