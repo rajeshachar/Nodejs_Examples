@@ -52,8 +52,12 @@ Password: admin@5454
 
 **Note:** To change admin password
 
- Go to https://www.browserling.com/tools/bcrypt 
+Go to https://www.browserling.com/tools/bcrypt 
+
+Enter your new password and click on bcrypt
  
- Enter your new password and click on bcrypt
- 
- Copy encrypted password and paste it as value of password under **/myapp/database/admin.json**
+Copy encrypted password and paste it as value of password under **/myapp/database/admin.json**
+
+### Postman Collection Details
+
+Directly import **Nodejs_Project.postman_collection.json** file into postman

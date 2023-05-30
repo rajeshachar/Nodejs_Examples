@@ -1,13 +1,13 @@
 [
     {
-        "emp_id": 1948435,
-        "fname": "Jhon",
-        "password": "$2b$10$77lJEA4mm9DV.cQPbn47BeyiuQqZ5MQ1INgizERpn0LwVxjdY7bCe",
-        "email": "jh@tcs.com",
-        "contact": 7259500935,
+        "emp_id": 202302,
+        "fname": "Jenny",
+        "password": "$2b$10$4gcaSx8YQcXjFlWJq4kCAOnww0wEKmti1t0hYRHfcFKjIuTiC0aK2",
+        "email": "jenny@tcs.com",
+        "contact": 9879516935,
         "address": {
-            "city": "Indiana",
-            "country": "US",
+            "city": "tumkur",
+            "country": "IND",
             "zipcode": 576022
         }
     }

@@ -56,7 +56,7 @@ router.get('/', authMiddleware,async(req,res,next) => {
 router.post('/api/register',async (req, res, next) => {
  
     try{
-      if(isEmpty(req.body))
+      if(_.isEmpty(req.body))
       {
         throw Error.BadRequest("Oopss!!!...Payload is missing");
       }
@@ -121,6 +121,14 @@ router.post('/api/login', async (req, res, next) => {
 router.put('/api/update/:id',authMiddleware, async (req, res, next) => {
 
   try{
+    const header=req.headers['authorization'].split(" ")
+    const decoded=jwt_decode(header[1])
+    if(decoded.emp_id ==='admin')
+    {  
+      throw Error.Unauthorized("Sorry!!..Invalid token")
+    }
+    else
+    {
  
    if(_.isEmpty(req.body))
     {
@@ -156,7 +164,7 @@ router.put('/api/update/:id',authMiddleware, async (req, res, next) => {
         });
       }
     }
-  
+    }
   }
   catch(err)
   {
