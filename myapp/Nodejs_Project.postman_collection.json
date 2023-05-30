@@ -1,0 +1,274 @@
+{
+	"info": {
+		"_postman_id": "a1eaf8a2-b1e2-44f2-aa22-5e0f3be5ae47",
+		"name": "Nodejs_Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Home Page",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/www.tcs.com/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"www.tcs.com",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin Home Page",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbXBfaWQiOiJhZG1pbiIsImlhdCI6MTY4NTQ1Nzg1MiwiZXhwIjoxNjg1NDU5NjUyLCJhdWQiOlsiYWRtaW4iLCIkMmEkMTAkZlFLNUJseXdnY0lqekdoYjIweGVSLmt6YUNhb2c5TU4yci9IL2EzWkg1d1E2M3l2SHIyai4iXX0.tScFivHLbW9lT2hkoCGHbgdXeO2iGjB9DqsQ8QFtR0c",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/www.tcs.com/api/admin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"www.tcs.com",
+						"api",
+						"admin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register Page",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"emp_id\": 202302,\r\n        \"fname\": \"Jenny\",\r\n        \"password\": \"jo@123\",\r\n        \"email\": \"jenny@tcs.com\",\r\n        \"contact\": 9879516935,\r\n        \"address\": {\r\n            \"city\": \"tumkur\",\r\n            \"country\": \"IND\",\r\n            \"zipcode\": 576022\r\n        }\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:5000/www.tcs.com/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"www.tcs.com",
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login Page",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"emp_id\": 202302,\n    \"password\": \"jo@123\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/www.tcs.com/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"www.tcs.com",
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin Login Page",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"username\":\"admin\",\r\n        \"password\":\"admin@5454\"\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:5000/www.tcs.com/api/admin/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"www.tcs.com",
+						"api",
+						"admin",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Page",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fname\": \"Rajesh\",\n    \"password\": \"r@123\",\n    \"email\": \"r@tcs.com\",\n    \"contact\": 9879516935,\n    \"address\": {\n        \"city\": \"Karnool\",\n        \"country\": \"IND\",\n        \"zipcode\": 576022\n    }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/www.tcs.com/api/update/202302",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"www.tcs.com",
+						"api",
+						"update",
+						"202302"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Page",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/www.tcs.com/api/delete/202302",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"www.tcs.com",
+						"api",
+						"delete",
+						"202302"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Page",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/www.tcs.com/api/allemps/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"www.tcs.com",
+						"api",
+						"allemps",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
